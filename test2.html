@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 2</title>
+    <script>
+        function checkAnswer() {
+            var answer = document.querySelector('input[name="q1"]:checked');
+            var correctAnswer = "Київ";  
+            var resultText = "";
+            var nextTest = "test3.html";  
+            var resultImage = "";  
+
+            if (answer) {
+                if (answer.value === correctAnswer) {
+                    resultText = "Вірно! Ви вибрали правильну відповідь: " + correctAnswer;
+                    resultImage = "correct.png";  
+                } else {
+                    resultText = "Невірно! Правильна відповідь: " + correctAnswer;
+                    resultImage = "incorrect.png";  
+                }
+            } else {
+                resultText = "Будь ласка, виберіть відповідь!";
+            }
+
+            
+            alert(resultText);
+
+            
+            var imageContainer = document.getElementById('result-image');
+            imageContainer.innerHTML = `<img src="${resultImage}" alt="Результат" class="result-image">`;
+
+            
+            setTimeout(function() {
+                window.location.href = nextTest;
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="test-container">
+        <h2>Тест 2: Яка столиця України?</h2>
+        <form>
+            <label><input type="radio" name="q1" value="Київ"> Київ</label><br>
+            <label><input type="radio" name="q1" value="Львів"> Львів</label><br>
+            <label><input type="radio" name="q1" value="Одеса"> Одеса</label><br><br>
+            <button type="button" class="btn" onclick="checkAnswer()">Перевірити відповідь</button>
+        </form>
+    
+        <div id="result-image"></div>
+    </div>
+</body>
+</html>

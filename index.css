@@ -1,0 +1,104 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Стилі для фреймів */
+.frame-container {
+    display: flex;
+    height: 90vh;
+}
+
+.menu-frame {
+    width: 220px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+.test-frame {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+}
+
+/* Стилі для меню */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav h2 {
+    margin-top: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #888;
+}
+
+/* Стилі для тестів */
+.test-container {
+    padding: 20px;
+}
+
+.test-container h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin: 5px 0;
+}
+
+button.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #45a049;
+}
+
+button.btn:active {
+    background-color: #3e8e41;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
