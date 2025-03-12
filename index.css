@@ -1,4 +1,4 @@
-/* Загальні стилі */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -17,7 +17,7 @@ h1 {
     margin: 0;
 }
 
-/* Стилі для фреймів */
+
 .frame-container {
     display: flex;
     height: 90vh;
@@ -34,7 +34,6 @@ h1 {
     border: 1px solid #ddd;
 }
 
-/* Стилі для меню */
 nav {
     background-color: #333;
     color: white;
@@ -60,7 +59,7 @@ nav a:hover {
     background-color: #888;
 }
 
-/* Стилі для тестів */
+
 .test-container {
     padding: 20px;
 }
